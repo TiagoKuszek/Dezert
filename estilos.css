@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.responsive{
+        width: 100%; 
+        height: auto;
+}
+
+.separador-azul {
+    display: flex;
+    position: relative;
+    width: 60%;
+    top: -12px;
+    left: 20%;
+    height: 12px;
+    background-color: rgb(239, 184, 16);
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#dezertnav{
+    font-size: 35px;
+    margin-left: 50px;
+    margin-top: 30px;
+    transition: 0.3s;
+    font-family: dosG;
+    transform: scale(1);
+    transition: .5s;
+}
+#dezertnav:hover{
+    color: rgb(239, 184, 16);
+    transform: scale(1.1);
+    transition: .5s;
+}
+#navi {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 17px;
+    margin-right: 60px;
+    margin-top: 25px;
+    display: inline-block;
+    position: relative;
+    font-family: unoR;
+    height: 40px;
+    
+}
+
+#navi:hover {
+    color: rgb(239, 184, 16);
+    transition: 0.5s;
+}
+
+#navi:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(239, 184, 16);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+#navi:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#navvi li:last-child {
+    border-right:none;
+}
+#barranav{
+    height: 110px;
+    background-color: black;
+}
+
+.nosotros{
+    margin-top: 225px;
+    margin-left: 120px;
+    color: white;
+}
+
+.btn-contacto{
+    margin-top: 25px;
+    margin-left: 260px;
+    background-color: rgb(239, 184, 16);
+    padding: 7px 15px 7px 15px;
+    border: none;
+    border-radius: 4px;
+}
+
+
+
+
