@@ -124,17 +124,18 @@ body{
     padding: 15px 45px 15px 45px;
     transform: rotate(0deg);
     transition: 1.5s;
-  }
-  
-  .frase button:hover {
+}
+
+.frase button:hover {
     background-color: rgb(255, 153, 0);
-  }
+}
 /* columna 1 frase+boton */
 
-/* columna 2 imagen */
+/* columna 2 imagen 
 .img{
     
 }
+*/
 /* columna 2 imagen */
 
 /* INFORMACION */
