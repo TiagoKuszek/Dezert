@@ -88,6 +88,7 @@ body{
     display: block;
     align-items: center;
     padding: 1rem;
+    grid-column-gap: 16px;
 }
 
 @media (min-width:768px){
@@ -138,8 +139,75 @@ body{
 
 /* INFORMACION */
 
+#imagen-frase{
+    margin-top: 50px;
+}
 
+/* ESTO HACE QUE LA FOTO NO SE PEGUE AL BOTON EN EL CONTACTO */
+#imagen-nav{
+    margin-top: 45px;
+}
 
+#quehacemos{
+    background-color: rgb(10, 10, 10);
+    margin-top: 100px;
+}
 
+.titulo150{
+    padding-top: 150px;
+    padding-bottom: 100px;
+    padding-left: 75px;
+    padding-right: 75px;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: white;
+    font-size: 38px;
+}
 
+.titulo150 span{
+    color: rgb(239, 184, 16);
+}
 
+#quehacemos1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+#quehacemos1 h2{
+    color: white;
+    font-size: 25px;
+}
+#quehacemos1 p{
+    padding-top: 10px;
+    color: rgb(77, 76, 76);
+    font-size: 20px;
+}
+
+#btn-id{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin-right: 55px;
+}
+
+#btn-qhm{
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    background-color: rgb(10, 10, 10);
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+#btn-qhm:hover{
+    background-color:rgb(156, 131, 63); 
+}
+
+#right-arrow{
+    color: white;
+}
