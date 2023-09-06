@@ -259,6 +259,85 @@ body{
     
 /* NOSOTROS */
 
+/*NUESTRO TRABAJO */ 
+.nuestrost {
+    font-family: uno;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    color: rgb(255, 255, 255);
+  }
+
+  .trabajos_texto{
+    color: white;
+    
+  }
+
+  .contenedor {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 100px;
+  }
+
+  img {
+    width: 100%;
+  }
+  
+  .trabajo__columna {
+    margin: 22px;
+  }
+  
+  .trabajos .contenedor {
+    display: grid;
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 768px) {
+    .btn-wsp {
+      width: 63px;
+      height: 63px;
+      line-height: 66px;
+    }
+  }
+  @media (min-width: 520px) {
+    .trabajos .contenedor {
+      grid-template-columns: repeat(2, 50%);
+    }
+  }
+  @media (min-width: 728px) {
+    .trabajos .contenedor {
+      grid-template-columns: repeat(3, 33.3%);
+    }
+  }
+  @media (min-width: 1024px) {
+    .trabajos .contenedor {
+      grid-template-columns: repeat(4, 25%);
+    }
+    .contenedor {
+      width: 1024px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .contenedor {
+      width: 1200px;
+    }
+
+  /*NUESTRO TRABAJO */ 
+ 
+  /*COMO PODEMOS AYUDARTE*/ 
+    .container{
+        width: 75vw;
+        max-width: 1000px;
+        min-width: 1800px;
+        margin: auto;
+    }
+    img{
+        width: 100%;
+    }
+  /*COMO PODEMOS AYUDARTE*/ 
+  
+
+
 /*:::::Pie de Pagina*/
 .pie-pagina{
     width: 100%;
