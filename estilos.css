@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 
-
 body{
     background-color: rgb(22, 22, 22);
 }
+
 html{
     scroll-behavior: smooth;
 }
@@ -17,21 +17,21 @@ html{
         height: auto;
 }
 
+/* BARRA DE NAVEGACION */
 
-
-/* NABVAR */
+#Logo-empresa{
+    width: 10%; 
+    height: auto;
+    
+}
 
 #dezertnav{
-    font-size: 35px;
-    margin-left: 50px;
-    margin-top: 30px;
-    transition: 0.3s;
-    font-family: dosG;
-    transform: scale(1);
-    transition: .5s;
+    margin: auto;
+    width: 25vh;
+    height: 40px;
+    margin-left: 20px;
 }
 #dezertnav:hover{
-    color: rgb(239, 184, 16);
     transform: scale(1.1);
     transition: .5s;
 }
@@ -44,7 +44,7 @@ html{
     margin-top: 25px;
     display: inline-block;
     position: relative;
-    font-family: unoR;
+    font-family: Jumper-light;
     height: 40px;
     
 }
@@ -81,7 +81,7 @@ html{
     
 }
 
-/* NABVAR */
+/* BARRA DE NAVEGACION */
 
 /* INFORMACION */
 /* columnas responsive con grid */
@@ -100,13 +100,13 @@ html{
 }
 /* columnas responsive con grid */
 
-/* columna 1 frase+boton */
+/* HABLA CON NOSOTROS + FOTO */
 .frase {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Jumper-regular', Times, serif;
     text-align: center;
   }
   .frase h2 {
-    font-family: uno;
+    font-family: Jumper-light;
     text-align: center;
     color: rgb(255, 255, 255);
     margin-top: 100px;
@@ -132,22 +132,11 @@ html{
     transition: .4s;
     background-color: rgb(255, 153, 0);
 }
-/* columna 1 frase+boton */
-
-/* columna 2 imagen 
-.img{
-    
-}
-*/
-/* columna 2 imagen */
-
-/* INFORMACION */
 
 #imagen-frase{
     margin-top: 50px;
 }
-
-/* ESTO HACE QUE LA FOTO NO SE PEGUE AL BOTON EN EL CONTACTO */
+/* HABLA CON NOSOTROS + FOTO */
 
 /* QUE HACEMOS */
 
@@ -173,6 +162,7 @@ html{
     margin-right: 50px;
     color: white;
     font-size: 38px;
+    font-family: "Jumper-regular";
 }
 
 .titulo150 span{
@@ -185,6 +175,7 @@ html{
     grid-gap: 2.5rem;
     padding-left: 150px;
     padding-right: 150px;
+    font-family: "Jumper-light";
 }
 
 #quehacemos1 h2{
@@ -213,6 +204,7 @@ html{
     border: 1px solid white;
     font-size: 20px;
     transition: 0.4s;
+    font-family: "Jumper-extralight";
 }
 
 #btn-qhm:hover{
@@ -245,10 +237,12 @@ html{
     .pp{
         color: white;
         padding-top: 40px;
+        font-family: "Jumper-extralight";
     }
     #pp{
         color: white;
         font-size: 22px;
+        font-family: "Jumper-extralight";
     }
 
 #imagenCEO{
@@ -262,9 +256,80 @@ html{
     
 /* NOSOTROS */
 
+/*:::::SERVICIOS */
+
+.servicios{
+    width: 100%;
+    height: 100vh;
+    padding: 0 8%;
+    margin-bottom: 200px;
+}
+
+.servicios h2{
+    text-align: center;
+    padding-top: 10%;
+    margin-bottom: 60px;
+    font-weight: 600;
+    position: relative;
+    color: white;
+    font-family: "Jumper-light";
+}
+
+.servicios p{
+    color: white;
+}
+
+.servicios h2::after{
+    content: "";
+    background: rgb(22, 22, 22);
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.servicios1{
+    text-align: center;
+    padding: 25px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: transparent;
+    transition: 0.4s, background 0.4s;
+}
+
+.servicios1 i{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.servicios1 h2{
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.servicios1:hover{
+    background: rgb(255, 154, 3);
+    color: white;
+    transform: scale(1.05);
+}
+
+.servicios1:hover i{
+    color: rgb(146, 138, 138);
+
+}
+/*:::::SERVICIOS */
+
 /*NUESTRO TRABAJO */ 
 .nuestrost {
-    font-family: uno;
+    font-family: "Jumper-light";
     font-size: 45px;
     text-align: center;
     margin-top: 30px;
@@ -274,6 +339,7 @@ html{
 
 .trabajos_texto{
     color: white;
+    font-family: "Jumper-light";
     
 }
 
@@ -331,7 +397,7 @@ img {
 /*COMO PODEMOS AYUDARTE*/ 
 
 
-    /*COMO PODEMOS AYUDARTE*/ 
+ /*COMO PODEMOS AYUDARTE*/ 
 
 
 
@@ -354,6 +420,7 @@ img {
     color: white;
     margin-bottom: 25px;
     position: relative;
+    font-family: "Jumper-light";
 }
 
 .col1 h4::before{
@@ -376,6 +443,7 @@ img {
     display: block;
     text-transform: capitalize;
     transition: .4s;
+    
 }
 
 .col1 ul li a:hover{
@@ -416,72 +484,3 @@ img {
 
 /*:::::Pie de Pagina*
 
-/*:::::SERVICIOS */
-
-.servicios{
-    width: 100%;
-    height: 100vh;
-    padding: 0 8%;
-    margin-bottom: 200px;
-}
-
-.servicios h2{
-    text-align: center;
-    padding-top: 10%;
-    margin-bottom: 60px;
-    font-weight: 600;
-    position: relative;
-    color: white;
-}
-
-.servicios p{
-    color: white;
-}
-
-.servicios h2::after{
-    content: "";
-    background: rgb(22, 22, 22);
-    width: 100px;
-    height: 5px;
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.row{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 30px;
-}
-
-.servicios1{
-    text-align: center;
-    padding: 25px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    background: transparent;
-    transition: 0.4s, background 0.4s;
-}
-
-.servicios1 i{
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-
-.servicios1 h2{
-    font-weight: 600;
-    margin-bottom: 8px;
-}
-
-.servicios1:hover{
-    background: rgb(255, 154, 3);
-    color: white;
-    transform: scale(1.05);
-}
-
-.servicios1:hover i{
-    color: rgb(146, 138, 138);
-
-}
-/*:::::SERVICIOS */
