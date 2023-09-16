@@ -101,6 +101,18 @@ html{
 /* columnas responsive con grid */
 
 /* HABLA CON NOSOTROS + FOTO */
+#imagen-nav{
+    width: 100%; 
+    max-width: 100%; 
+    height: auto; 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    border-radius: 1pc;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
 .frase {
     font-family: 'Jumper-regular', Times, serif;
     text-align: center;
@@ -135,18 +147,11 @@ html{
 
 #imagen-frase{
     margin-top: 50px;
+    margin-right: 20px;
 }
 /* HABLA CON NOSOTROS + FOTO */
 
 /* QUE HACEMOS */
-
-#imagen-nav{
-    width: 440px;
-    height: 320px;
-    margin-top: 45px;
-    border-radius: 2%;
-
-}
 
 #quehacemos{
     background-color: rgb(10, 10, 10);
@@ -401,86 +406,80 @@ img {
 
 
 
-/*:::::Pie de Pagina*/
-.main{
+/*FOOTER*/
+footer {
     display: flex;
-    flex-wrap: wrap;
-}
-
-.footer{
-    padding: 10px 0;
-}
-
-.col1{
-    width: 25%;
-}
-
-.col1 h4{
-    font-size: 1.2rem;
-    color: white;
-    margin-bottom: 25px;
-    position: relative;
-    font-family: "Jumper-light";
-}
-
-.col1 h4::before{
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 50px;
-    left: 0;
-    bottom: -8px;
-    background: rgb(179, 192, 2);
-}
-
-.col1 ul li:not(:last-child){
-    margin-bottom: 15px;
-}
-
-.col1 ul li a{
-    color: rgb(255, 255, 255);
-    font-size: 1.1rem;
-    display: block;
-    text-transform: capitalize;
-    transition: .4s;
-    
-}
-
-.col1 ul li a:hover{
-    color: rgb(179, 192, 2);
-    transform: translateX(12px);
-}
-
-.col1 .social{
-    width: 220px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-decoration: none;
-}
-
-.col1 .social a{
-    height: 40px;
-    width: 40px;
-    background: #ff702a;
-    color: white;
-    display: inline-flex;
-    align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
-    border-radius: 50%;
-    transition: .4s;
+    background-color: #000000;
+    color: #fff;
+    padding: 20px 0;
 }
 
-.col1 .social a:hover{
-    transform: scale(1.2);
-    color: white;
-    background: black;
+.columna {
+    text-align: center;
+    margin: 0 20px;
+}
+
+.columna h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: "Jumper-bold";
+}
+
+.columna ul, .columna p {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: "Jumper-extralight";
+}
+
+.columna ul li {
+    margin: 5px 0;
+}
+
+.columna a {
     text-decoration: none;
+    color: #fff;
 }
 
+/* Estilos de las redes sociales */
+.redes-sociales {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #000000;
+}
 
+.redes-sociales p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
 
+.redes-sociales ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
-/*:::::Pie de Pagina*
+.redes-sociales li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.redes-sociales a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilos responsive */
+@media screen and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+    }
+
+    .columna {
+        margin: 10px 0;
+    }
+}
+
+/*FOOTER*
 
