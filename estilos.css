@@ -40,7 +40,8 @@ html{
     text-decoration: none;
     transition: 0.5s;
     font-size: 17px;
-    margin-right: 60px;
+    margin-left: 30px;
+    margin-right: 15px;
     margin-top: 25px;
     display: inline-block;
     position: relative;
@@ -102,22 +103,23 @@ html{
 
 /* HABLA CON NOSOTROS + FOTO */
 #imagen-nav{
-    width: 100%; 
+    width: 80%; 
     max-width: 100%; 
     height: auto; 
     background-size: contain; 
     background-repeat: no-repeat; 
     background-position: center; 
     border-radius: 1pc;
-    margin-left: 10px;
-    margin-top: 30px;
+    margin-left: 55px;
+    margin-top: 70px;
 }
 
 .frase {
     font-family: 'Jumper-regular', Times, serif;
     text-align: center;
-  }
-  .frase h2 {
+    margin-top: 150px;
+}
+.frase h2 {
     font-family: Jumper-light;
     text-align: center;
     color: rgb(255, 255, 255);
@@ -183,6 +185,12 @@ html{
     font-family: "Jumper-light";
 }
 
+#quehacemos1 h2 p{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    grid-gap: 2.5rem;
+}
+
 #quehacemos1 h2{
     color: white;
     font-size: 25px;
@@ -213,7 +221,7 @@ html{
 }
 
 #btn-qhm:hover{
-    background-color:rgb(156, 131, 63); 
+    background: rgb(59, 36, 0);
 }
 
 #right-arrow{
@@ -223,42 +231,115 @@ html{
 /* QUE HACEMOS */
 
 /* NOSOTROS */
-.col{
-    background-color: rgb(10, 10, 10);
-    height: 300px;
-    overflow: hidden;
-    word-wrap: break-word;
-    margin-left: 20px;
-    margin-right: 20px;
-    }
-    
-    .row{
-    padding: 5vh;
-    column-gap: 5px;
-    margin-left: 20px;
-    margin-right: 20px;
-    }
-
-    .pp{
-        color: white;
-        padding-top: 40px;
-        font-family: "Jumper-extralight";
-    }
-    #pp{
-        color: white;
-        font-size: 22px;
-        font-family: "Jumper-extralight";
-    }
-
-#imagenCEO{
-    width: 60px;
-    height: 60px;
-    border-radius: 55%;
+.nosotros-stn{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 50px;
     
 }
 
-    
-    
+#mateo{
+    transform: translateX(0px);
+    transition: .6s;
+}
+
+#mateo:hover{
+    transform: translateX(20px);
+    transition: .6s;
+}
+
+
+#tiago{
+    transform: translateX(0px);
+    transition: .6s;
+}
+
+#tiago:hover{
+    transform: translateX(-20px);
+    transition: .6s;
+}
+
+.top{
+    width: 400px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.our-team{
+    margin-top: 100px;
+}
+
+.top h2{
+    font-size: 2.5rem;
+}
+
+.top p{
+    color: white;
+    margin-top: 30px;
+}
+
+.carta{
+    width: 400px;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carta:hover{
+    background-color: rgb(59, 36, 0);
+}
+
+.flex-container{
+    display: flex;
+    gap: 1rem;
+    color: white;
+}
+
+.flex-container img{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.flex-container p{
+    color: white;
+}
+
+.text{
+    font-size: 14px;
+    margin: 0.6rem 0;
+}
+
+.icon{
+    background-color: rgb(255, 255, 255, 0.2);
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    font-size: 1.1rem;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    transform: scale(1);
+    transition: .4s;
+    text-decoration: none;
+}
+
+.icon:hover{
+    color: black;
+    background-color: white;
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+.social-medi4{
+    display: flex;
+    gap: 0.5rem;
+}
+
 /* NOSOTROS */
 
 /*:::::SERVICIOS */
@@ -267,7 +348,7 @@ html{
     width: 100%;
     height: 100vh;
     padding: 0 8%;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 .servicios h2{
@@ -321,15 +402,17 @@ html{
 }
 
 .servicios1:hover{
-    background: rgb(255, 154, 3);
+    background: rgb(59, 36, 0);
     color: white;
     transform: scale(1.05);
 }
 
 .servicios1:hover i{
-    color: rgb(146, 138, 138);
+    color: rgb(0, 0, 0);
 
 }
+
+
 /*:::::SERVICIOS */
 
 /*NUESTRO TRABAJO */ 
@@ -407,79 +490,100 @@ img {
 
 
 /*FOOTER*/
-footer {
+.footer{
+    background-color: rgb(0, 0, 0);
+    padding: 70px 0;
+    line-height: 1.5;
+    height: 500px;
+}
+
+.footer-1{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.footer-2{
     display: flex;
-    justify-content: center;
-    background-color: #000000;
-    color: #fff;
-    padding: 20px 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 100px;
 }
 
-.columna {
-    text-align: center;
-    margin: 0 20px;
-}
-
-.columna h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    font-family: "Jumper-bold";
-}
-
-.columna ul, .columna p {
+.footer-col ul{
     list-style: none;
-    padding: 0;
-    margin: 0;
-    font-family: "Jumper-extralight";
 }
 
-.columna ul li {
-    margin: 5px 0;
-}
-
-.columna a {
-    text-decoration: none;
-    color: #fff;
-}
-
-/* Estilos de las redes sociales */
-.redes-sociales {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #000000;
-}
-
-.redes-sociales p {
+.footer-col h4{
     font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+    font-family: "Jumper-light";
+}
+
+.footer-col h4::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: red;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
     margin-bottom: 10px;
 }
 
-.redes-sociales ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.redes-sociales li {
-    display: inline;
-    margin: 0 10px;
-}
-
-.redes-sociales a {
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: rgb(255, 153, 0);
     text-decoration: none;
-    color: #fff;
+    font-weight: 300;
+    color: rgb(255, 153, 0);
+    display: block;
+    transition: all 0.3s ease;
+    font-family: "Jumper-light";
 }
 
-/* Estilos responsive */
-@media screen and (max-width: 768px) {
-    footer {
-        flex-direction: column;
-    }
+.footer-col ul li a:hover{
+    color: white;
+    padding-left: 10px;
+}
 
-    .columna {
-        margin: 10px 0;
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+@media (max-width: 767px) {
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
     }
 }
 
+@media (max-width: 574px) {
+    .footer-col{
+        width: 100%;
+    }
+} 
 /*FOOTER*
 
