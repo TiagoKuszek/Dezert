@@ -269,6 +269,14 @@ html{
     margin-right: auto;
 }
 
+.ourteam{
+    font-family: 'Jumper-regular'
+}
+
+#ourteam-p{
+    font-family: 'Jumper-regular'
+}
+
 .our-team{
     margin-top: 100px;
 }
@@ -314,9 +322,7 @@ html{
     margin: 0.6rem 0;
 }
 
-.card__wrapper{
-    font-family: 'Jumper-regular'
-}
+
 
 .icon{
     background-color: rgb(255, 255, 255, 0.2);
@@ -326,8 +332,8 @@ html{
     height: 30px;
     font-size: 1.1rem;
     border-radius: 50%;
-    color: rgb(255, 255, 255);
     transform: scale(1);
+    color: white;
     transition: .4s;
     text-decoration: none;
 }
