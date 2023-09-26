@@ -291,13 +291,10 @@ html{
     margin-top: 100px;
 }
 
-.top h2{
-    font-size: 2.5rem;
-}
 
 .top p{
     color: white;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .carta{
@@ -475,11 +472,14 @@ img {
         height: 63px;
         line-height: 66px;
     }
+
+    
 }
 @media (min-width: 520px) {
     .trabajos .contenedor {
         grid-template-columns: repeat(2, 50%);
     }
+
 }
 @media (min-width: 728px) {
     .trabajos .contenedor {
