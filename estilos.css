@@ -473,7 +473,17 @@ img {
         line-height: 66px;
     }
 
-    
+    .footer123{
+        background-color: black;
+        height: 1200px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .servicios{
+        margin-bottom: 250px;
+    }
+
 }
 @media (min-width: 520px) {
     .trabajos .contenedor {
